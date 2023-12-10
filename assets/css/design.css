@@ -1182,6 +1182,11 @@
     .ps-timeline-sec .container ol.ps-timeline li:last-child .img-handler-bot img {
       width: 100%;
     }
+
+
+    .img-handler-bot img {
+        display: none !important;
+    }
     .ps-timeline-sec .container ol.ps-timeline li:last-child .ps-top {
       margin-bottom: 0 !important;
       top: 20px;
@@ -1251,6 +1256,7 @@
     position: absolute;
     left: 8px;
     top: 47.5%;
+    display: none;
   }
   
   .ps-timeline-sec .container ol:after {
@@ -1258,10 +1264,10 @@
     content: "";
     width: 10px;
     height: 10px;
+    display: none;
     border-radius: 100%;
     position: absolute;
-    right: 8px;
-    top: 47.5%;
+    right: 0px;
   }
   
   .ps-timeline-sec .container ol.ps-timeline {

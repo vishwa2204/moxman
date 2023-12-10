@@ -1994,6 +1994,10 @@ section {
         width: 60px;
         margin-right: 15px;
     }
+
+    .services-grid .thumbnail img{
+        width: 100%;
+    }
 }
 
 .services-grid .content {
