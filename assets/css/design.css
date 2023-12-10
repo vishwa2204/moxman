@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Oswald', sans-serif;
-    transition: 0.1s;
+    transition: 0.5s;
 }
 
 :root {
@@ -13,8 +13,39 @@
     --red: brown;
     --white: #fff;
     --light: rgb(217, 235, 240);
+    --g: gray;
 }
 
+.banner {
+
+    width: 100%;
+    background-image: url(../images/pics/1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    z-index: 111;
+}
+
+.banner::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.5;
+}
+
+.banner .banner-row h1{
+    color: var(--white);
+}
+
+
+.banner .banner-row .banner-text-left p{
+    color: var(--white);
+}
 
 /* ===================================
    Skill Section
@@ -478,7 +509,7 @@
 
 }
 
-@media screen and (min-width:321px) and (max-width:425px) {
+@media screen and (min-width:321px) and (max-width:426px) {
 
     .research-section .research-container {
         width: 100%;
@@ -1387,3 +1418,132 @@
   .explainer_video_marketing .service-style {
     padding-top: 1em;
   }
+
+
+  .staff-section {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+
+}
+
+.staff-section .staff-container {
+    width: 100%;
+    height: auto;
+
+}
+
+.staff-title {
+    width: 100%;
+    height: auto;
+    margin-bottom: 3%;
+}
+
+.staff-title h2 {
+    font-size: 40px;
+    font-weight: 900;
+    word-spacing: 5px;
+}
+
+.staff-title h2 span {
+    letter-spacing: 3px;
+    color: var(--color);
+}
+
+/* staff-services-section  */
+
+.staff-services-section {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+    position: relative;
+}
+
+.staff-services-section .staff-services-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.staff-services-title {
+    width: 100%;
+    height: auto;
+    margin-bottom: 3%;
+
+}
+
+.staff-services-title h2 span {
+    color: var(--color);
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+
+.staff-services-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.staff-services-content .staff-services-box {
+    width: 48%;
+    height: auto;
+    padding: 3%;
+    border: 0.5px solid var(--g);
+    border-radius: 30px;
+    margin-bottom: 3%;
+    position: relative;
+}
+
+
+.staff-services-content .staff-services-box:hover {
+    filter: drop-shadow(0 0 10px var(--color));
+}
+
+.staff-services-content .staff-services-box span {
+    font-size: 70px;
+    font-weight: 900;
+    position: absolute;
+    z-index: 0;
+    color: var(--color);
+    opacity: 0.2;
+    top: 0;
+    right: 0;
+}
+
+.staff-services-content .staff-services-box h5 {
+    position: relative;
+    z-index: 1;
+    font-weight: 900;
+    color: var(--red);
+    margin-bottom: 5%;
+}
+
+.staff-services-content .staff-services-box p {
+    position: relative;
+    z-index: 1;
+}
+
+
+@media screen and (max-width:760px) {
+
+    .staff-services-content {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .staff-services-content .staff-services-box {
+        width: 100%;
+        height: auto;
+        padding: 3%;
+        border-radius: 30px;
+        margin-bottom: 3%;
+        position: relative;
+    }
+}
